@@ -1,20 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
-*,
-*:after,
-*:before {
-	box-sizing: border-box;
+:root {
+  --mobile: 768px;
 }
 
 *, html, body {
-	margin: 0;
+  margin: 0;
 	padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6em;
+  position: fixed;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  padding: 0 2em;
+}
 
+.header i {
+  font-size: 2em;
+}
 
+.header img {
+  width: 15em;
+  height: auto;
+}
 
+.friends {
+  padding-top: 6em;
+}
 
-
-
-
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 0 25vw;
+  }
+}
